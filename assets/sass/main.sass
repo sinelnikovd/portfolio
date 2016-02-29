@@ -34,7 +34,7 @@ body textarea:required:valid
 
 body
 	font-size: 17px
-	min-width: 1200px
+	min-width: 320px
 	position: relative
 	line-height: 1.3
 	font-family: "HelveticaNeueLight", $helvetica
@@ -51,8 +51,38 @@ body
 	+sprite($s-project)*/
 /* end icon */
 
+.header
+	position: fixed
+	z-index: 2
 
+.container
+	+clearfix
 
+.work
+	width: 33.333333%
+	float: left
+.work_double
+	width: 66.6666666%
+	.work__wrapper
+		padding-bottom: 50%
+
+.work__wrapper
+	width: 100%
+	padding-bottom: 100%
+	position: relative
+	overflow: hidden
+
+.work__content
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-repeat: no-repeat
+	background-size: cover
+	background-color: #f00
+	border: 1px solid #fff
+	box-sizing: border-box
 
 //ALWAYS END
 @import "_media.sass"
